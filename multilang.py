@@ -6,7 +6,7 @@ import sys
 import fileinput
 
 # Supported langs. xx is for comments.
-LANGS = ("en", "ja", "xx")
+LANGS = ("en", "fr", "xx")
 
 def clean_line(line):
     """Remove Notebook formatting if present."""
