@@ -1,10 +1,10 @@
 # Computer vision models: seed classification project :en
 
-## Par le Laboratoire d’intelligence artificielle, Agence canadienne d’inspection des aliments :fr
-
 ## By AI Lab, Canadian Food Inspection Agency :en
 
 # Modèles de vision par ordinateur : projet de classification des semences :fr 
+
+## Par le Laboratoire d’intelligence artificielle, Agence canadienne d’inspection des aliments :fr
 
 ## Introduction
 
