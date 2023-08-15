@@ -1,7 +1,7 @@
 # Computer vision models: seed classification project 
 
-
 ## By AI Lab, Canadian Food Inspection Agency 
+
 
 
 ## Introduction

@@ -1,8 +1,8 @@
 
-## Par le Laboratoire d’intelligence artificielle, Agence canadienne d’inspection des aliments 
-
 
 # Modèles de vision par ordinateur : projet de classification des semences 
+
+## Par le Laboratoire d’intelligence artificielle, Agence canadienne d’inspection des aliments 
 
 ## Introduction
 
