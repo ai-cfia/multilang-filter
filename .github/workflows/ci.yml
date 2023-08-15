@@ -24,7 +24,7 @@ jobs:
         run: python multilang.py fr demo.md > demo.fr.md 
         
       - name: execute py script # run main.py
-        run: python multilang.py fr demo.md > demo.en.md 
+        run: python multilang.py en demo.md > demo.en.md 
 
       - name: Commit changes
         run: |
