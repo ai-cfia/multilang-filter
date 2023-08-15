@@ -1,0 +1,38 @@
+name: run main.py
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' # install the python version needed
+
+      # - name: install python packages
+      #   run: |
+      #     python -m pip install --upgrade pip
+      #     pip install -r requirements.txt
+
+      - name: execute py script # run main.py
+        run: python multilang.py fr demo.md > demo.fr.md 
+        
+      - name: execute py script # run main.py
+        run: python multilang.py fr demo.md > demo.en.md 
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "no-reply@github.com"
+          git config --global user.name "GitHub Actions"
+          git add demo.*.md
+          git commit -m "Update translations based on ${{github.sha}}"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
